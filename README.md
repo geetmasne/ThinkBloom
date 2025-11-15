@@ -1,6 +1,6 @@
-#ThinkBloom: AI-Powered Question Analyzer
+ThinkBloom: AI-Powered Question Analyzer
 
-##A smart tool to classify questions using Revised Bloom’s Taxonomy.
+A smart tool to classify questions using Revised Bloom’s Taxonomy.
 
 🎯 What is ThinkBloom?
 
