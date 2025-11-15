@@ -1,0 +1,498 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bloom's Taxonomy Learning Tool</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Background Animation -->
+    <div class="background-animation">
+        <div class="shape shape1"></div>
+        <div class="shape shape2"></div>
+        <div class="shape shape3"></div>
+    </div>
+    <!-- Header Section with Logo and Navigation -->
+    <header>
+        <div class="logo">
+            <i class="fas fa-brain"></i>
+            <h1>Think<span>Bloom</span></h1>
+        </div>
+        <nav>
+            <button id="homeBtn" class="nav-btn"><i class="fas fa-home"></i> Home</button>
+            <button id="analyzeQuestionsBtn" class="nav-btn"><i class="fas fa-search"></i> Analyze Questions</button>
+            <div class="auth-buttons">
+                <button id="loginBtn" class="nav-btn"><i class="fas fa-sign-in-alt"></i> Login</button>
+                <button id="registerBtn" class="nav-btn"><i class="fas fa-user-plus"></i> Register</button>
+                <button id="logoutBtn" class="nav-btn hidden"><i class="fas fa-sign-out-alt"></i> Logout</button>
+            </div>
+        </nav>    
+    </header>
+    <!-- Main Content Container -->
+    <main>
+        <!-- Welcome Section -->
+        <section id="welcome" class="section active">
+            <h2>Welcome to ThinkBloom Learning Tool</h2>
+            <p>"Change the way you learn with our AI-Powered Question Analyzer, created to improve your learning experience by using the smart approach of Revised Bloom's Taxonomy to help you think critically, analyze better and understand deeply."</p>
+            <div class="cta-buttons">
+                <button id="learnMoreBtn" class="btn pulse-animation"><i class="fas fa-book-open"></i> Learn About Bloom's Taxonomy</button>
+                <button id="startAnalysisBtn" class="btn"><i class="fas fa-chart-bar"></i> Analyze Questions</button>
+            </div>
+        </section>
+        <!-- Bloom's Taxonomy Information Section -->
+        <section id="bloomInfo" class="section">
+            <h2>Revised Bloom's Taxonomy</h2>
+            <div class="info-container">
+                <div class="taxonomy-visual">
+                    <div class="bloom-pyramid">
+                        <div class="bloom-level" data-level="6">
+                            <h3>Creating</h3>
+                            <div class="level-icon"><i class="fas fa-lightbulb"></i></div>
+                        </div>
+                        <div class="bloom-level" data-level="5">
+                            <h3>Evaluating</h3>
+                            <div class="level-icon"><i class="fas fa-balance-scale"></i></div>
+                        </div>
+                        <div class="bloom-level" data-level="4">
+                            <h3>Analyzing</h3>
+                            <div class="level-icon"><i class="fas fa-microscope"></i></div>
+                        </div>
+                        <div class="bloom-level" data-level="3">
+                            <h3>Applying</h3>
+                            <div class="level-icon"><i class="fas fa-tools"></i></div>
+                        </div>
+                        <div class="bloom-level" data-level="2">
+                            <h3>Understanding</h3>
+                            <div class="level-icon"><i class="fas fa-book"></i></div>
+                        </div>
+                        <div class="bloom-level" data-level="1">
+                            <h3>Remembering</h3>
+                            <div class="level-icon"><i class="fas fa-memory"></i></div>
+                        </div>
+                    </div>
+                </div>
+                <!-- Replace the existing taxonomy-details div with this enhanced version -->
+<div class="taxonomy-details">
+    <div class="level-details" id="level1">
+        <h3><i class="fas fa-memory"></i> Remembering</h3>
+        <p>The ability to recall facts, terms, basic concepts, and definitions from memory without necessarily understanding what they mean.</p>
+        <div class="level-content">
+            <div class="level-info">
+                <p><strong>Cognitive Process:</strong> Retrieving relevant knowledge from long-term memory.</p>
+                <p><strong>Key verbs:</strong> Define, List, Recall, Memorize, Repeat, State, Name, Identify, Match, Label, Recite</p>
+            </div>
+            <div class="level-examples">
+                <h4>Examples:</h4>
+                <ul>
+                    <li>Name the six levels of Bloom's Taxonomy.</li>
+                    <li>List the first 10 elements in the periodic table.</li>
+                    <li>Recite the multiplication table up to 12×12.</li>
+                </ul>
+            </div>
+            <div class="level-questions">
+                <h4>Question Stems:</h4>
+                <ul>
+                    <li>What is...?</li>
+                    <li>Who was...?</li>
+                    <li>When did...?</li>
+                    <li>How many...?</li>
+                    <li>Can you name...?</li>
+                    <li>Where is...?</li>
+                </ul>
+            </div>
+            <div class="level-activities">
+                <h4>Learning Activities:</h4>
+                <ul>
+                    <li>Flashcards</li>
+                    <li>Memory games</li>
+                    <li>Quizzes with basic recall questions</li>
+                    <li>Labeling diagrams</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <div class="level-details" id="level2">
+        <h3><i class="fas fa-book"></i> Understanding</h3>
+        <p>The ability to comprehend and interpret information, explain ideas or concepts, and translate knowledge into new contexts.</p>
+        <div class="level-content">
+            <div class="level-info">
+                <p><strong>Cognitive Process:</strong> Constructing meaning from instructional messages, including oral, written, and graphic communication.</p>
+                <p><strong>Key verbs:</strong> Classify, Describe, Explain, Identify, Summarize, Compare, Interpret, Discuss, Translate, Paraphrase, Infer, Exemplify</p>
+            </div>
+            <div class="level-examples">
+                <h4>Examples:</h4>
+                <ul>
+                    <li>Explain the difference between applying and analyzing in your own words.</li>
+                    <li>Summarize the main points of the chapter on photosynthesis.</li>
+                    <li>Compare and contrast democracy and autocracy.</li>
+                </ul>
+            </div>
+            <div class="level-questions">
+                <h4>Question Stems:</h4>
+                <ul>
+                    <li>How would you explain...?</li>
+                    <li>Can you describe what happens when...?</li>
+                    <li>How would you summarize...?</li>
+                    <li>What is the main idea of...?</li>
+                    <li>Can you clarify...?</li>
+                    <li>How would you differentiate between...?</li>
+                </ul>
+            </div>
+            <div class="level-activities">
+                <h4>Learning Activities:</h4>
+                <ul>
+                    <li>Create concept maps</li>
+                    <li>Restate concepts in your own words</li>
+                    <li>Summarize news articles or chapters</li>
+                    <li>Create analogies</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <div class="level-details" id="level3">
+        <h3><i class="fas fa-tools"></i> Applying</h3>
+        <p>The ability to use learned material in new and concrete situations, including applying rules, methods, concepts, principles, laws, and theories.</p>
+        <div class="level-content">
+            <div class="level-info">
+                <p><strong>Cognitive Process:</strong> Carrying out or using a procedure in a given situation.</p>
+                <p><strong>Key verbs:</strong> Apply, Demonstrate, Illustrate, Operate, Solve, Use, Calculate, Implement, Execute, Show, Modify, Prepare</p>
+            </div>
+            <div class="level-examples">
+                <h4>Examples:</h4>
+                <ul>
+                    <li>Use the principles of Bloom's Taxonomy to design a lesson plan.</li>
+                    <li>Solve a set of quadratic equations using the formula.</li>
+                    <li>Apply Newton's laws of motion to a real-world problem.</li>
+                </ul>
+            </div>
+            <div class="level-questions">
+                <h4>Question Stems:</h4>
+                <ul>
+                    <li>How would you use...?</li>
+                    <li>What examples can you find to...?</li>
+                    <li>How would you solve ___ using what you've learned?</li>
+                    <li>How would you organize ___ to show...?</li>
+                    <li>How would you show your understanding of...?</li>
+                    <li>What approach would you use to...?</li>
+                </ul>
+            </div>
+            <div class="level-activities">
+                <h4>Learning Activities:</h4>
+                <ul>
+                    <li>Problem-solving exercises</li>
+                    <li>Role-playing scenarios</li>
+                    <li>Lab experiments</li>
+                    <li>Using models to demonstrate knowledge</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <div class="level-details" id="level4">
+        <h3><i class="fas fa-microscope"></i> Analyzing</h3>
+        <p>The ability to break down information into its components, seeing relationships and hierarchical structure, and distinguishing between facts and inferences.</p>
+        <div class="level-content">
+            <div class="level-info">
+                <p><strong>Cognitive Process:</strong> Breaking material into constituent parts and determining how parts relate to one another and to an overall structure or purpose.</p>
+                <p><strong>Key verbs:</strong> Analyze, Differentiate, Examine, Test, Compare, Contrast, Categorize, Investigate, Distinguish, Question, Deconstruct, Organize</p>
+            </div>
+            <div class="level-examples">
+                <h4>Examples:</h4>
+                <ul>
+                    <li>Analyze a test to determine which cognitive levels are being assessed.</li>
+                    <li>Compare and contrast the themes in 'Romeo and Juliet' and 'West Side Story'.</li>
+                    <li>Examine the relationship between global warming and extreme weather events.</li>
+                </ul>
+            </div>
+            <div class="level-questions">
+                <h4>Question Stems:</h4>
+                <ul>
+                    <li>What are the parts or features of...?</li>
+                    <li>How is ___ related to...?</li>
+                    <li>Why do you think...?</li>
+                    <li>What is the theme/underlying message of...?</li>
+                    <li>What evidence can you find to support...?</li>
+                    <li>What is the relationship between...?</li>
+                </ul>
+            </div>
+            <div class="level-activities">
+                <h4>Learning Activities:</h4>
+                <ul>
+                    <li>SWOT analysis</li>
+                    <li>Cause and effect diagrams</li>
+                    <li>Literary analysis essays</li>
+                    <li>Surveys and data analysis</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <div class="level-details" id="level5">
+        <h3><i class="fas fa-balance-scale"></i> Evaluating</h3>
+        <p>The ability to make judgments based on criteria and standards through checking and critiquing, assessing validity and quality.</p>
+        <div class="level-content">
+            <div class="level-info">
+                <p><strong>Cognitive Process:</strong> Making judgments based on criteria and standards.</p>
+                <p><strong>Key verbs:</strong> Appraise, Critique, Evaluate, Judge, Support, Value, Defend, Assess, Conclude, Justify, Prioritize, Recommend</p>
+            </div>
+            <div class="level-examples">
+                <h4>Examples:</h4>
+                <ul>
+                    <li>Evaluate the effectiveness of using higher-order thinking questions in classroom instruction.</li>
+                    <li>Judge the validity of arguments for and against climate change policies.</li>
+                    <li>Critique a research paper's methodology and conclusions.</li>
+                </ul>
+            </div>
+            <div class="level-questions">
+                <h4>Question Stems:</h4>
+                <ul>
+                    <li>Do you agree with the actions/outcomes...?</li>
+                    <li>What is your opinion of...?</li>
+                    <li>How would you prioritize...?</li>
+                    <li>What criteria would you use to assess...?</li>
+                    <li>What choice would you have made...?</li>
+                    <li>How would you justify...?</li>
+                </ul>
+            </div>
+            <div class="level-activities">
+                <h4>Learning Activities:</h4>
+                <ul>
+                    <li>Debates</li>
+                    <li>Peer reviews</li>
+                    <li>Writing persuasive arguments</li>
+                    <li>Creating rubrics for assessment</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <div class="level-details" id="level6">
+        <h3><i class="fas fa-lightbulb"></i> Creating</h3>
+        <p>The ability to put elements together to form a coherent whole; reorganizing elements into a new pattern or structure through generating, planning, or producing.</p>
+        <div class="level-content">
+            <div class="level-info">
+                <p><strong>Cognitive Process:</strong> Putting elements together to form a novel, coherent whole or make an original product.</p>
+                <p><strong>Key verbs:</strong> Create, Design, Develop, Formulate, Produce, Compose, Construct, Generate, Invent, Plan, Author, Devise</p>
+            </div>
+            <div class="level-examples">
+                <h4>Examples:</h4>
+                <ul>
+                    <li>Create a new assessment strategy incorporating all levels of Bloom's Taxonomy.</li>
+                    <li>Design an experiment to test the effects of different fertilizers on plant growth.</li>
+                    <li>Compose an original piece of music expressing a specific emotion.</li>
+                </ul>
+            </div>
+            <div class="level-questions">
+                <h4>Question Stems:</h4>
+                <ul>
+                    <li>What could you invent to...?</li>
+                    <li>How would you design a new...?</li>
+                    <li>What might happen if you combined...?</li>
+                    <li>How would you solve the problem in a different way?</li>
+                    <li>How would you test your...?</li>
+                    <li>Can you develop a proposal for...?</li>
+                </ul>
+            </div>
+            <div class="level-activities">
+                <h4>Learning Activities:</h4>
+                <ul>
+                    <li>Project-based learning</li>
+                    <li>Creating original stories or art</li>
+                    <li>Designing prototypes or models</li>
+                    <li>Formulating hypotheses and research studies</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</div>
+            </div>
+            <div class="action-buttons">
+                <button id="backToHomeBtn" class="btn"><i class="fas fa-arrow-left"></i> Back to Home</button>
+            </div>
+        </section>
+        <!-- Question Analysis Section -->
+        <section id="questionAnalysis" class="section">
+            <h2>Question Analysis Tool</h2>
+            <div class="analysis-form">
+                <div class="form-group">
+                    <label for="questionInput">Enter your question:</label>
+                    <textarea id="questionInput" placeholder="Type or paste your question here..."></textarea>
+                </div>
+                <div class="examples-dropdown">
+                    <button class="btn dropdown-toggle"><i class="fas fa-lightbulb"></i> Example Questions</button>
+                    <div class="dropdown-content">
+                        <div class="example-item" data-question="List the five major events of World War II.">
+                            <p><strong>Remembering:</strong> List the five major events of World War II.</p>
+                        </div>
+                        <div class="example-item" data-question="Explain how photosynthesis works.">
+                            <p><strong>Understanding:</strong> Explain how photosynthesis works.</p>
+                        </div>
+                        <div class="example-item" data-question="Solve this mathematical equation using the quadratic formula.">
+                            <p><strong>Applying:</strong> Solve this mathematical equation using the quadratic formula.</p>
+                        </div>
+                        <div class="example-item" data-question="Compare and contrast the themes in 'Romeo and Juliet' and 'West Side Story'.">
+                            <p><strong>Analyzing:</strong> Compare and contrast the themes in 'Romeo and Juliet' and 'West Side Story'.</p>
+                        </div>
+                        <div class="example-item" data-question="Evaluate the effectiveness of the New Deal policies during the Great Depression.">
+                            <p><strong>Evaluating:</strong> Evaluate the effectiveness of the New Deal policies during the Great Depression.</p>
+                        </div>
+                        <div class="example-item" data-question="Design an experiment to test the effects of different fertilizers on plant growth.">
+                            <p><strong>Creating:</strong> Design an experiment to test the effects of different fertilizers on plant growth.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="action-buttons">
+                    <button id="analyzeBtn" class="btn pulse-animation"><i class="fas fa-search"></i> Analyze Question</button>
+                    <button id="clearQuestionBtn" class="btn"><i class="fas fa-eraser"></i> Clear</button>
+                </div>
+            </div>
+            <div id="analysisResult" class="analysis-result hidden">
+                <h3>Analysis Result</h3>
+                <div class="result-content">
+                    <div class="result-level">
+                        <span class="level-badge">Level 4: Analyzing</span>
+                    </div>
+                    <div class="result-explanation">
+                        <p>This question requires students to break information into parts to explore understandings and relationships.</p>
+                    </div>
+                    <div class="related-verbs">
+                        <h4>Related Action Verbs:</h4>
+                        <div class="verb-tags">
+                            <span class="verb-tag">Analyze</span>
+                            <span class="verb-tag">Compare</span>
+                            <span class="verb-tag">Contrast</span>
+                            <span class="verb-tag">Differentiate</span>
+                            <span class="verb-tag">Examine</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="save-result">
+                    <button id="saveAnalysisBtn" class="btn"><i class="fas fa-save"></i> Save Analysis</button>
+                </div>
+            </div>
+            <div class="action-buttons">
+                <button id="backFromAnalysisBtn" class="btn"><i class="fas fa-arrow-left"></i> Back to Home</button>
+            </div>
+        </section>
+        <!-- User History Section -->
+        <section id="userHistory" class="section">
+            <h2>Your Question History</h2>
+            <div class="history-filters">
+                <select id="filterLevel">
+                    <option value="all">All Levels</option>
+                    <option value="1">Level 1: Remembering</option>
+                    <option value="2">Level 2: Understanding</option>
+                    <option value="3">Level 3: Applying</option>
+                    <option value="4">Level 4: Analyzing</option>
+                    <option value="5">Level 5: Evaluating</option>
+                    <option value="6">Level 6: Creating</option>
+                </select>
+                <button id="clearAllHistoryBtn" class="btn danger-btn"><i class="fas fa-trash-alt"></i> Clear All History</button>
+            </div>
+            <div class="history-list">
+                <!-- History items will be dynamically added here -->
+            </div>
+            <div class="no-history hidden">
+                <p>No questions saved yet. Analyze some questions to see your history.</p>
+            </div>
+            <div class="action-buttons">
+                <button id="backFromHistoryBtn" class="btn"><i class="fas fa-arrow-left"></i> Back to Home</button>
+            </div>
+        </section>
+        <!-- Feedback Section -->
+        <section id="feedbackSection" class="section">
+            <h2>Your Feedback Matters</h2>
+            <div class="feedback-form">
+                <div class="form-group">
+                    <label for="feedbackRating">Rate your experience:</label>
+                    <div class="star-rating">
+                        <i class="far fa-star" data-rating="1"></i>
+                        <i class="far fa-star" data-rating="2"></i>
+                        <i class="far fa-star" data-rating="3"></i>
+                        <i class="far fa-star" data-rating="4"></i>
+                        <i class="far fa-star" data-rating="5"></i>
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label for="feedbackText">Your comments:</label>
+                    <textarea id="feedbackText" placeholder="Tell us what you think about the application..."></textarea>
+                </div>
+                <div class="action-buttons">
+                    <button id="submitFeedbackBtn" class="btn pulse-animation"><i class="fas fa-paper-plane"></i> Submit Feedback</button>
+                </div>
+            </div>
+            <div id="feedbackSuccess" class="feedback-success hidden">
+                <i class="fas fa-check-circle"></i>
+                <p>Thank you for your feedback!</p>
+            </div>
+            <div class="action-buttons">
+                <button id="backFromFeedbackBtn" class="btn"><i class="fas fa-arrow-left"></i> Back to Home</button>
+            </div>
+        </section>
+    </main>
+    <!-- Authentication Modals -->
+    <div id="loginModal" class="modal">
+        <div class="modal-content">
+            <span class="close-modal">&times;</span>
+            <h2><i class="fas fa-sign-in-alt"></i> Login</h2>
+            <form id="loginForm">
+                <div class="form-group">
+                    <label for="loginEmail">Email:</label>
+                    <input type="email" id="loginEmail" required>
+                </div>
+                <div class="form-group">
+                    <label for="loginPassword">Password:</label>
+                    <input type="password" id="loginPassword" required>
+                </div>
+                <div class="form-actions">
+                    <button type="submit" class="btn"><i class="fas fa-sign-in-alt"></i> Login</button>
+                </div>
+                <p class="form-switch">Don't have an account? <a href="#" id="switchToRegister">Register</a></p>
+            </form>
+        </div>
+    </div>
+    <div id="registerModal" class="modal">
+        <div class="modal-content">
+            <span class="close-modal">&times;</span>
+            <h2><i class="fas fa-user-plus"></i> Register</h2>
+            <form id="registerForm">
+                <div class="form-group">
+                    <label for="registerName">Full Name:</label>
+                    <input type="text" id="registerName" required>
+                </div>
+                <div class="form-group">
+                    <label for="registerEmail">Email:</label>
+                    <input type="email" id="registerEmail" required>
+                </div>
+                <div class="form-group">
+                    <label for="registerPassword">Password:</label>
+                    <input type="password" id="registerPassword" required>
+                </div>
+                <div class="form-group">
+                    <label for="registerConfirmPassword">Confirm Password:</label>
+                    <input type="password" id="registerConfirmPassword" required>
+                </div>
+                <div class="form-actions">
+                    <button type="submit" class="btn"><i class="fas fa-user-plus"></i> Register</button>
+                </div>
+                <p class="form-switch">Already have an account? <a href="#" id="switchToLogin">Login</a></p>
+            </form>
+        </div>
+    </div>
+    <!-- Confirmation Modal -->
+    <div id="confirmationModal" class="modal">
+        <div class="modal-content">
+            <h2>Confirmation</h2>
+            <p id="confirmationMessage">Are you sure you want to delete all history?</p>
+            <div class="modal-actions">
+                <button id="confirmYesBtn" class="btn danger-btn">Yes</button>
+                <button id="confirmNoBtn" class="btn">No</button>
+            </div>
+        </div>
+    </div>
+    <footer>
+        <p>&copy; 2025 ThinkBloom Learning Tool. All rights reserved.</p>
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>
